@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+
+    <header>
+        <nav class="flex-row bg-green-300 text-white p-3 content-center">
+            <button>AhorrADAS</button>
+            <div class="flex justify-end gap-6 pr-8">
+                <button>Balance</button>
+                <button>Categorías</button>
+                <button>Reportes</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="flex">
+    
+    <section class="flex-col">
+    <div class="flex-col rounded-md bg-gray-100 w-1/4 " >
+        <h3 class="p-2 mb-2 text-xl font-bold" >Balance</h3>
+        <p class="p-2">Ganancias</p>
+        <p class="p-2">Gastos</p>
+        <p class="p-2">Total</p>
+    </div>
+    <div class=" rounded-md w-1/4 mt-6 bg-gray-100" >
+        <div class="flex">
+        <h3 class="p-2 mb-2 text-xl font-bold" >Filtros</h3>
+        <button class="mb-2 ml-14 text-m text-blue-600">Ocultar filtros</button>
+    </div>
+        <div class="flex-col">
+            <p class="p-2">Tipo</p>
+            <select class="py-2 rounded w-full cursor-pointer">
+                <option value="value1">Todos</option>
+                <option value="value2">Gasto</option>
+                <option value="value3">Ganancia</option>
+            </select>
+            <p class="p-2">Categoría</p>
+            <select class="py-2 rounded w-full cursor-pointer">
+                <option value="value1">Todas</option>
+                <option value="value2">Comida</option>
+                <option value="value3">Servicios</option>
+                <option value="value3">Salidas</option>
+                <option value="value3">Educación</option>
+                <option value="value3">Transporte</option>
+                <option value="value3">Trabajo</option>
+            </select>
+            <p class="p-2">Desde</p>
+            <input type="date">
+            <p class="p-2">Ordenar por</p>
+            <select class="py-2 rounded w-full cursor-pointer">
+                <option value="value1">Más reciente</option>
+                <option value="value2">Menos reciente</option>
+                <option value="value3">Mayor monto</option>
+                <option value="value3">Menor monto</option>
+                <option value="value3">A/Z</option>
+                <option value="value3">Z/A</option>
+        </div>
+    </section>
+    <section class="bg-black-300">
+        
+        <img src="./assets/undraw_vault_re_s4my.svg" width="300" height="300">
+    
+</section>
+
+    </section>
+</body>
+</html>
